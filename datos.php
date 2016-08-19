@@ -19,7 +19,7 @@
 		//fin conexion a la base
 
 
-		require_once 'botones.php';
+		require_once 'Administrator.php';
 		//$boto = new botones();
 
 

@@ -20,7 +20,7 @@ class demo {
    public function getId_demo() {  
      return $this->id;  
    }  
-   public function setId_demo($id_demo) {  
+   public function setId_demo($id) {  
      $this->id = $id;  
    }  
    public function getNombre() {  
@@ -34,7 +34,7 @@ class demo {
      return $this->foto;  
    }  
    public function setFoto($foto) {  
-     $this->nombre = $foto;  
+     $this->foto = $foto;  
    }
 
  }

@@ -14,8 +14,7 @@
 		
 		<a href="../PHP-CRUD/DemoList.php">DemoList</a>
 		
-		<a href="../PHP-CRUD/Update.php">Update</a>
-		
+				
 		
 	</body>
 </html>

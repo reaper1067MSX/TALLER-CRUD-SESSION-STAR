@@ -5,18 +5,25 @@ require_once 'demo.php';
 $alm = new demo();
 $model = new demoColector();
 
+$id = $_GET['id'];
+
+
+
 
 ?>
 
 <!DOCTYPE html>
 <html lang="es">
 	<head>
-		<title> - UPDATE - </title>       
+		<title> - DELETE - </title>       
 	</head>
     <body style="padding:15px;">
 
- 
-                 <?php  $model->UpdateDEMO();?>
+		
+                 <?php $model->DeleteDEMO($id);?>
+
+				 <br>
+                 <a href="DemoList.php">Volver</a>
                
  
     </body>

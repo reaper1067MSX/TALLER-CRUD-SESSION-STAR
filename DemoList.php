@@ -7,6 +7,8 @@ require_once 'demo.php';
 $alm = new demo();
 $model = new demoColector();
 
+$id=0;
+
 ?>
 
 <!DOCTYPE html>
@@ -18,7 +20,9 @@ $model = new demoColector();
 
         <div class="pure-g">
             <div class="pure-u-1-12">
-                               
+                <br>
+                <a href="Administrator.php">Volver</a>
+                <br>              
 
                 <table class="pure-table pure-table-horizontal">
                     <thead>
@@ -33,9 +37,10 @@ $model = new demoColector();
                         <tr>
                             <td><?php echo $r->getId_demo(); ?></td>
                             <td><?php echo $r->getNombre(); ?></td>
-							<td><a href="../PHP-CRUD/Update.php">Update</a></td>
-							<td><a href="../PHP-CRUD/Delete.php">Delete</a></td>
 
+							<td><a href="Update.php?id=<?php echo $r->getId_demo(); ?>">Update</a></td>
+							<td><a href="Delete.php?id=<?php echo $r->getId_demo(); ?>">Delete</a></td>
+                            
                         </tr>
                     <?php endforeach; ?>
                 </table>     

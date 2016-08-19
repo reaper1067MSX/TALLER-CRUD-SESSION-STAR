@@ -46,17 +46,12 @@ public function ListarDEMO()
 		}
  }
  
- public function UpdateDEMO()
+ public function UpdateDEMO($id, $nombre)
  {
  try
 		{
-		    $result= $this->modelo->operacion("update demo set nombre= 'Omicron' where id= 7");
-
-
-
-
-
-                       
+		    $result= $this->modelo->operacion("UPDATE demo set nombre= '".$nombre."' WHERE id='".$id."' ");
+        
 			return $result;
 		}
 		catch(Exception $e)
@@ -65,11 +60,25 @@ public function ListarDEMO()
 		}
  }
  
- public function DeleteDEMO()
+ public function DeleteDEMO($id)
  {
  try
 		{
-		     $result= $this->modelo->operacion("delete from demo where id= 7");
+		     $result= $this->modelo->operacion("delete from demo where id= '" . $id . "' ");
+
+			return $result;
+		}
+		catch(Exception $e)
+		{
+			die($e->getMessage());
+		}
+ }
+
+ public function ConsultarNombre($id){
+
+ 	try
+		{
+		    $result= $this->modelo->operacion("SELECT from demo where id= '" . $id . "' ");
                        
 			return $result;
 		}
@@ -77,6 +86,7 @@ public function ListarDEMO()
 		{
 			die($e->getMessage());
 		}
+
  }
  
  

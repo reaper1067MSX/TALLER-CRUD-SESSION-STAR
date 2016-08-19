@@ -48,6 +48,14 @@ $count = $count +1 ;
     					<input type="text" id="nombre" name="nombre" >
 
     				</div>
+                    
+                    <div>
+
+    					<br>
+    					<label>Imagen a Seleccionar: </label>
+    					<input type="file" id="imagen" name="imagen" >
+
+    				</div>
 
     				<div>
         				<input type="submit" name="X" value="X"> 

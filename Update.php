@@ -42,6 +42,14 @@ $result = $model->ConsultarNombre($id);
     				<div>
         				<input type="submit" name="X" value="X"> 
     				</div>
+                    
+                    <div>
+
+    					<br>
+    					<label>Imagen a Seleccionar: </label>
+    					<input type="file" id="imagen" name="imagen" >
+
+    				</div>
 
     			</form> 
 

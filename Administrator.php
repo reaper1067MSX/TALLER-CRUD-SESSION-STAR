@@ -12,7 +12,7 @@
 		<h2><center>Administracion del sitio</center></h2>
 		<br>
 		
-		<a href="../PHP-CRUD/DemoList.php">DemoList</a>
+		<a href="DemoList.php">DemoList</a>
 		
 				
 		

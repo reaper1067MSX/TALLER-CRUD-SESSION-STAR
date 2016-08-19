@@ -9,14 +9,15 @@ $model = new demoColector();
 $id = $_POST['id'];
 $nombre = $_POST['nombre'];
 
-echo "<br>";
-echo $id;
-echo "<br>";
-echo $nombre;
+$NON = "";
+$path = $_POST['imagen'];
+
+$NON ="../foto/";
+$NON= $NON . $path;
 
 
 
-$model->UpdateDEMO($id, $nombre);
+$model->UpdateDEMO($id, $nombre, $NON);
 
 /*
 if ($model == true){

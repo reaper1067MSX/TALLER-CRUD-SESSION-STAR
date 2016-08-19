@@ -32,11 +32,11 @@ public function ListarDEMO()
 	}
  
  
- public function InsertDEMO($id, $nombre)
+ public function InsertDEMO($id, $nombre, $path)
  {
  try
 		{
-		    $result= $this->modelo->operacion("INSERT into demo (id, nombre, foto) values ('".$id."', '".$nombre."', NULL)");
+		    $result= $this->modelo->operacion("INSERT into demo (id, nombre, foto) values ('".$id."', '".$nombre."', '".$path."' )");
                        
 			return $result;
 		}
@@ -46,11 +46,11 @@ public function ListarDEMO()
 		}
  }
  
- public function UpdateDEMO($id, $nombre)
+ public function UpdateDEMO($id, $nombre, $path)
  {
  try
 		{
-		    $result= $this->modelo->operacion("UPDATE demo set nombre= '".$nombre."' WHERE id='".$id."' ");
+		    $result= $this->modelo->operacion("UPDATE demo set nombre= '".$nombre."' , foto = '".$path."' WHERE id='".$id."' ");
         
 			return $result;
 		}

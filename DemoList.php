@@ -26,11 +26,12 @@ $id=0;
 
                 <a href="Frm_Create.php">Create</a>              
 
-                <table class="pure-table pure-table-horizontal">
+                <table class="pure-table pure-table-horizontal" border= 2>
                     <thead>
                         <tr>
                             <th style="text-align:left;">ID</th>
                             <th style="text-align:left;">Nombre</th>
+                            <th style="text-align:left;">Path</th>
                             <th style="text-align:left;">Option</th>
                             <th style="text-align:left;">Option</th>
                         </tr>
@@ -39,6 +40,7 @@ $id=0;
                         <tr>
                             <td><?php echo $r->getId_demo(); ?></td>
                             <td><?php echo $r->getNombre(); ?></td>
+                            <td><?php echo $r->getFoto(); ?></td>
 
 							<td><a href="Update.php?id=<?php echo $r->getId_demo(); ?>">Update</a></td>
 							<td><a href="Delete.php?id=<?php echo $r->getId_demo(); ?>">Delete</a></td>

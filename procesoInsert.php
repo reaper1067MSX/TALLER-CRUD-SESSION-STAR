@@ -8,15 +8,17 @@ $model = new demoColector();
 
 $id = $_POST['id'];
 $nombre = $_POST['nombre'];
+$NON = "";
+$path = $_POST['imagen'];
+
+$NON ="../foto/";
+$NON= $NON . $path;
 
 echo "<br>";
-echo $id;
-echo "<br>";
-echo $nombre;
+//echo $NON;
 
 
-
-$model->InsertDEMO($id, $nombre);
+$model->InsertDEMO($id, $nombre, $NON);
 
 /*
 if ($model == true){

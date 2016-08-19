@@ -22,7 +22,9 @@ $id=0;
             <div class="pure-u-1-12">
                 <br>
                 <a href="Administrator.php">Volver</a>
-                <br>              
+                <br>
+
+                <a href="Frm_Create.php">Create</a>              
 
                 <table class="pure-table pure-table-horizontal">
                     <thead>

@@ -16,7 +16,7 @@ echo $nombre;
 
 
 
-$model->UpdateDEMO($id, $nombre);
+$model->InsertDEMO($id, $nombre);
 
 /*
 if ($model == true){
@@ -40,7 +40,7 @@ if ($model == true){
 	<title>Proceso de UPDATE</title>
 </head>
 <body>
-	<a href="DemoList.php">Volver</a>
+	<a href="Frm_Create.php">Volver</a>
 
 </body>
 </html>

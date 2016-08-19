@@ -32,11 +32,11 @@ public function ListarDEMO()
 	}
  
  
- public function InsertDEMO()
+ public function InsertDEMO($id, $nombre)
  {
  try
 		{
-		    $result= $this->modelo->operacion("insert into demo (id, nombre, foto) values (7,'Ramses','../foto/Raiden.jpg')");
+		    $result= $this->modelo->operacion("INSERT into demo (id, nombre, foto) values ('".$id."', '".$nombre."', NULL)");
                        
 			return $result;
 		}
@@ -79,6 +79,24 @@ public function ListarDEMO()
  	try
 		{
 		    $result= $this->modelo->operacion("SELECT from demo where id= '" . $id . "' ");
+                       
+			return $result;
+		}
+		catch(Exception $e)
+		{
+			die($e->getMessage());
+		}
+
+ }
+
+
+ public function UltimoID(){
+
+ 	try
+		{
+		    $result= $this->modelo->operacion( "SELECT count(*) FROM demo");
+
+		    
                        
 			return $result;
 		}

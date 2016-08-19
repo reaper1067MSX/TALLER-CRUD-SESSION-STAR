@@ -9,7 +9,9 @@ $model = new demoColector();
 $id = $_POST['id'];
 $nombre = $_POST['nombre'];
 
+echo "<br>";
 echo $id;
+echo "<br>";
 echo $nombre;
 
 
@@ -31,3 +33,14 @@ if ($model == true){
 
 
 ?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Proceso de UPDATE</title>
+</head>
+<body>
+	<a href="Update.php">Volver</a>
+
+</body>
+</html>

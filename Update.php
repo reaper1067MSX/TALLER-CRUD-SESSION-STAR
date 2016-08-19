@@ -20,13 +20,13 @@ $result = $model->ConsultarNombre($id);
     <body style="padding:15px;">
 
 
-    			<form action="procesoUPDATE.php" method="post" name="UPDATE id="UPForm" >
+    			<form action="procesoUPDATE.php" method="post" name="UPDATE">
     				
     				<div>
     				
     					<br>
     					<label>ID</label>
-    					<input type="text" id="id" value=<?php echo $id ?> disabled/>
+    					<input type="text" id="id" name="id" value=<?php echo $id ?> >
 
     				</div>
 
@@ -35,12 +35,12 @@ $result = $model->ConsultarNombre($id);
 
     					<br>
     					<label>Nombre</label>
-    					<input type="text" id="nombre" />
+    					<input type="text" id="nombre" name="nombre" >
 
     				</div>
 
     				<div>
-        				<input type="submit" value="Submit"/> 
+        				<input type="submit" name="X" value="X"> 
     				</div>
 
     			</form> 
